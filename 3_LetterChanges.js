@@ -48,6 +48,7 @@ let string = LetterChanges('Hello');
 //Display the result 
 console.log(string);
 
+// Fun Tip: This program is a subset of Ceaser Cipher, Google it and try some more cool stuff!!
 
 // if not mentioned explicitly functions called are always inbuilt functions of javascript
 
