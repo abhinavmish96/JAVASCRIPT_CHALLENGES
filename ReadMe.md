@@ -6,7 +6,7 @@
 
 
 
-Just follow the flow to get the best out of these challenges, try the below mentioned challenges and become an expert in JS:
+Just follow the flow to get the best out of these challenges, try the below challenges and become an expert in JS:
 
 1. Calculate factorial for a given number
 2. Reverse a String
