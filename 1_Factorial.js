@@ -20,7 +20,7 @@ function Factorial(num){
 
 }
 
-// call the function for calculating the factorial and you can give your favourate number as argument
+// call the function for calculating the factorial and you can give your favourate number as argument; I am using 4 as an example
 let result = Factorial(4);
 
 //Display the result 
