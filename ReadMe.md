@@ -10,7 +10,7 @@
 
 ### 1. Calculate factorial for a given number
 ### 2. Reverse a String
-
+### 3. Change the letters of a String to the next letter
 
 
 
