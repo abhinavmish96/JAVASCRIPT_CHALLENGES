@@ -1,6 +1,6 @@
-/* The function FirstFactorial(num) take the num parameter being passed and return the factorial of it. For example: if num = 4, then your program should return (4 * 3 * 2 * 1) = 24. For the test cases, the range will be between 1 and 18 and the input will always be an integer */
+/* The function Factorial(num) take the num parameter being passed and return the factorial of it. For example: if num = 4, then your program should return (4 * 3 * 2 * 1) = 24. For the test cases, the range will be between 1 and 18 and the input will always be an integer */
 
-function FirstFactorial(num){
+function Factorial(num){
     
     // to store factorial; assign 1 otherwise you might see bizzare result such as NaN
     let fact = 1;
@@ -21,7 +21,7 @@ function FirstFactorial(num){
 }
 
 // call the function for calculating the factorial and you can give your favourate number as argument
-let result = FirstFactorial(4);
+let result = Factorial(4);
 
 //Display the result 
 console.log(result);
