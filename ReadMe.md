@@ -19,7 +19,7 @@
 
 
 
-# Follow me @abhinavmish96 on twitter to clarify any doubts or just drop a Hi!!!
+## Follow me @abhinavmish96 on twitter to clarify any doubts or just drop a Hi!!!
 
 
-## Start today! Happy Coding!!
+### Start today! Happy Coding!!
