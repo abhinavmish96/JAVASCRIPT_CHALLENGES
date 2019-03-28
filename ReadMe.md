@@ -1,7 +1,7 @@
 # Hello World!
 
 
-## This is a collection of JavaScript programs/challenges with line by line explanation for anyone who is learning to code in JavaScript [JS].
+## This is a collection of JavaScript programs/challenges [majorly ES6] with line by line explanation for anyone who is learning to code in JavaScript [JS].
 
 
 
