@@ -22,6 +22,8 @@ let string = ReverseString('Hello');
 //Display the result 
 console.log(string);
 
-// Fun Tip: Use different arguments in split and join function and you will see some cool stuff!! //for exapmle try " "(double qoutes with spaces)
+// Fun Tip: Use different arguments in split and join function and you will see some cool stuff!!
+
+//for exapmle try " "(double qoutes with spaces)
 
 // Also see __proto__ of any array in the console of a web browser to find all the function we can use with arrays
