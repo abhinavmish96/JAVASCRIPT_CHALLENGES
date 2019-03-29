@@ -17,6 +17,7 @@ Just follow the flow to get the best out of these challenges, try the below chal
 1. Calculate factorial for a given number
 2. Reverse a String
 3. Change the letters of a String to the next letter
+4. Simple addition from one upto the number
 
 
 
