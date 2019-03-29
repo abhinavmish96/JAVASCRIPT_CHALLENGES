@@ -8,7 +8,7 @@ The naming convention used for the programs goes as
 
 #### SerialNumber_ProgramName_Type
 
-Type are into are divided into few categories :
+Type are into are divided into few categories :<br>
 S : Strings <br>
 M : Mathematical
 
