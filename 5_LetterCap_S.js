@@ -8,10 +8,10 @@ function LetterCapitalize(str) {
     //loop to iterate over the str array
     for(let i = 0; i < str.length; i++) {
         // the statement looks really daunting but no worries we will break it down into small bits.
-        // on the left side we have have the str[i] which storing the modified string
+        // on the left side we have have the str[i] which is storing the modified string
         /* on the right side we have two parts :
-        1.str[i][0].toUpperCase() : str[i][0] is a 2-D array it is accesing the first char of the word as the str array element and coverting it to upper case.
-        2. str[i].slice(1) : slice creates a subarray of str[i] i.e element of the str array; starting from the second char to the last char of the element/word because that remains the same.
+        1. str[i][0].toUpperCase() : str[i][0] is a 2-D array it is accesing the first char of the word/element of the str array and coverting it to upper case.
+        2. str[i].slice(1) : slice creates a subarray of str[i] i.e word/element of the str array; starting from the second char to the last char [argument in slice() is '1'] of the element/word because that remains the same.
         Then we use '+' to join both the parts
         */ 
         str[i] = str[i][0].toUpperCase() + str[i].slice(1);
