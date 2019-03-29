@@ -40,9 +40,9 @@ function SimpleAdding(num) {
       //for example if num = 4 then this line will return 4 + SimpleAdding(3); calling the recusion function which returns 3 + SimpleAdding(2) and so on
       /* A visual treat 
       4 + SimpleAdding(3);
-             |
+          |
           3 + SimpleAdding(2);
-                   |
+              |
               2 + SimpleAdding(1);
                   |
                   1
