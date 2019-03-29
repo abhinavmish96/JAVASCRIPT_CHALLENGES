@@ -8,7 +8,8 @@ The naming convention used for the programs goes as
 
 #### SerialNumber_ProgramName_Type
 
-Type are into are divided into few categories :<br>
+Type are into are divided into few categories :
+
 S : Strings <br>
 M : Mathematical
 
@@ -18,6 +19,7 @@ Just follow the flow to get the best out of these challenges, try the below chal
 2. Reverse a String
 3. Change the letters of a String to the next letter
 4. Simple addition from one upto the number
+5. Coverting first letter of the all words in a string to upper case
 
 
 
