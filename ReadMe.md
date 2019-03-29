@@ -14,10 +14,10 @@ Just follow the flow to get the best out of these challenges, try the below chal
 
 
 
-### Suggestion and feedback are always welcome, feel free to fork and make changes.
+#### Suggestion and feedback are always welcome, feel free to fork and make changes.
 
 
 ## Follow me @abhinavmish96 on twitter to clarify any doubts or just drop a Hi!!
 
 
-### Start today! Happy Coding!!
+#### Start today! Happy Coding!!
