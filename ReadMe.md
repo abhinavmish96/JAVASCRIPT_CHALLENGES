@@ -9,7 +9,7 @@ The naming convention used for the programs goes as
 #### SerialNumber_ProgramName_Type
 
 Type are into are divided into few categories :
-S : Strings
+S : Strings <br>
 M : Mathematical
 
 Just follow the flow to get the best out of these challenges, try the below challenges and become an expert in JS:
