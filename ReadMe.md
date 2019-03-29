@@ -4,8 +4,10 @@
 ## This is a collection of JavaScript programs/challenges [majorly ES6] with line by line explanation for anyone who is learning to code in JavaScript [JS].
 
 
-The naming convention used for the programs goes as
+The naming convention used for the programs goes as 
+
 SerialNumber_ProgramName_Type
+
 Type are into are divided into few categories :
 S : Strings
 M : Mathematical
