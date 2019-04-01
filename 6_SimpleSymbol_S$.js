@@ -34,6 +34,8 @@ let string = SimpleSymbols('+a+==44==7+=+Y+');
 //Display the result 
 console.log(string);
 
+// Fun Tip: This type of code and program can be used to check a specific type of string passed; for example : email, phone number, etc
+
 
 /******************************************/
 
@@ -43,11 +45,17 @@ function SimpleSymbols(str) {
     
     // ^, $: start-of-line and end-of-line respectively. E.g., ^[0-9]$ matches a numeric string.
     if (/^[a-zA-Z]/.test(str) || /[a-zA-Z]$/.test(str)) {
+        
+        // if the string starts or ends with a alphabet then return false 
         return false;
     }
+
+    // if the alphabet char of the given string does not begin or end with '+' then return false
     else if (/[^+][a-zA-Z]/.test(str) || /[a-zA-Z][^+]/.test(str)) {
         return false;
     }
+
+    // if the above conditions are false then return true
     else {
      return true; 
     }
