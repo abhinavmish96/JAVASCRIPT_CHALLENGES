@@ -12,6 +12,7 @@ Type are into are divided into few categories :
 
 S : Strings <br>
 M : Mathematical
+$ : Symbol
 
 #### Just follow the flow to get the best out of these challenges, try the below challenges and become an expert in JS:
 
