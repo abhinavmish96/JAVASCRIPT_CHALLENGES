@@ -1,4 +1,4 @@
-/*function SimpleSymbols(str) take the str parameter being passed and determine if it is an acceptable sequence by either returning the string true or false. The str parameter will be composed of + and = symbols with several letters between them (ie. ++d+===+c++==a) and for the string to be true each letter must be surrounded by a + symbol. So the string to the left would be false. The string will not be empty and will have at least one letter. */
+/* function SimpleSymbols(str) take the str parameter being passed and determine if it is an acceptable sequence by either returning the string true or false. The str parameter will be composed of + and = symbols with several letters between them (ie. ++d+===+c++==a) and for the string to be true each letter must be surrounded by a + symbol. So the string to the left would be false. The string will not be empty and will have at least one letter. */
 
 function SimpleSymbols(str) {
     
@@ -23,7 +23,7 @@ function SimpleSymbols(str) {
         else flag = false;
     }
 
-    //return the boolean result    
+    // return the boolean result    
     return flag; 
 }
 
@@ -34,8 +34,6 @@ let string = SimpleSymbols('+a+==44==7+=+Y+');
 //Display the result 
 console.log(string);
 
-
-// Fun Tip: Use recursion function to perform addditon and you will see some cool stuff!!
 
 /******************************************/
 
@@ -54,6 +52,6 @@ function SimpleSymbols(str) {
      return true; 
     }
            
-  }
+}
 
-  //Fun Tip: http://www.ntu.edu.sg/home/ehchua/programming/howto/regexe.html ; check this link to get a better understandig of symbol used such as ^,$, etc.
+//Fun Tip: http://www.ntu.edu.sg/home/ehchua/programming/howto/regexe.html ; check this link to get a better understandig of symbol used such as ^,$, etc.
