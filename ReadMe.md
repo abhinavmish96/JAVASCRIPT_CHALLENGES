@@ -21,7 +21,7 @@ $ : Symbol
 3. Change the letters of a String to the next letter
 4. Simple addition from one upto the number
 5. Coverting first letter of all the words in a string to upper case
-6. Returing true for if all letters in the string are surrounded by '+' symbol
+6. Returing true for a given string if all letters are surrounded by '+' symbol
 
 
 #### Suggestion and feedback are always welcome, feel free to fork and make changes.
