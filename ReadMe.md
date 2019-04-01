@@ -13,14 +13,14 @@ Type are into are divided into few categories :
 S : Strings <br>
 M : Mathematical
 
-Just follow the flow to get the best out of these challenges, try the below challenges and become an expert in JS:
+#### Just follow the flow to get the best out of these challenges, try the below challenges and become an expert in JS:
 
 1. Calculate factorial for a given number
 2. Reverse a String
 3. Change the letters of a String to the next letter
 4. Simple addition from one upto the number
 5. Coverting first letter of all the words in a string to upper case
-
+6. Returing true for if all letters in the string are surrounded by '+' symbol
 
 
 #### Suggestion and feedback are always welcome, feel free to fork and make changes.
