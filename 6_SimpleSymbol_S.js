@@ -18,3 +18,32 @@ function SimpleSymbols(str) {
 
     return flag; 
 }
+
+
+// call the function to check the string and you can give your favourate string as argument; I am using '+a+==44==7+=+Y+' as an example for true.
+let string = SimpleSymbols('+a+==44==7+=+Y+');
+
+//Display the result 
+console.log(string);
+
+
+// Fun Tip: Use recursion function to perform addditon and you will see some cool stuff!!
+
+/******************************************/
+
+//Same program Alternate solution
+
+function SimpleSymbols(str) { 
+    
+    // ^, $: start-of-line and end-of-line respectively. E.g., ^[0-9]$ matches a numeric string.
+    if (/^[a-zA-Z]/.test(str) || /[a-zA-Z]$/.test(str)) {
+        return false;
+    }
+    else if (/[^+][a-zA-Z]/.test(str) || /[a-zA-Z][^+]/.test(str)) {
+        return false;
+    }
+    else {
+     return true; 
+    }
+           
+  }
