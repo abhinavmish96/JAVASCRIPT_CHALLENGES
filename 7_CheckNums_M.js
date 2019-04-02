@@ -4,7 +4,7 @@ function CheckNums(num1,num2) {
     
     // if the numbers are equal then return -1
     if(num2 === num1) return -1;
-    // otherwise return the boolean result in brackets; if the num2 is greater than num1 the return true else false
+    // otherwise return the boolean result for comparision performed in brackets; if the num2 is greater than num1 the return true else false
     else return (num2 > num1);
 
 }
