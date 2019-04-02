@@ -12,7 +12,9 @@ Type are into are divided into few categories :
 
 <b>S</b> : Strings <br>
 <b>M</b> : Mathematical <br>
-<b>$</b> : Symbol
+<b>$</b> : Symbol <br>
+<b>T</b> : Time
+
 
 #### Just follow the flow to get the best out of these challenges, try the below challenges and become an expert in JS:
 
@@ -23,6 +25,7 @@ Type are into are divided into few categories :
 5. Coverting first letter of all the words in a string to upper case
 6. Returing true for a given string if all letters are surrounded by '+' symbol
 7. Comparing two numbers and determining which one is greater
+8. Determining the difference in hours and minutes between two given times
 
 
 #### Suggestion and feedback are always welcome, feel free to fork and make changes.
