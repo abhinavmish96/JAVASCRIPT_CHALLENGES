@@ -10,7 +10,7 @@ The naming convention used for the programs goes as
 
 Type are into are divided into few categories :
 
-S : Strings <br>
+<b>S</b> : Strings <br>
 M : Mathematical <br>
 $ : Symbol
 
@@ -22,6 +22,7 @@ $ : Symbol
 4. Simple addition from one upto the number
 5. Coverting first letter of all the words in a string to upper case
 6. Returing true for a given string if all letters are surrounded by '+' symbol
+7. Comparing two numbers and determining which one is greater
 
 
 #### Suggestion and feedback are always welcome, feel free to fork and make changes.
