@@ -50,7 +50,7 @@ function SimpleSymbols(str) {
         return false;
     }
 
-    // if the alphabet char of the given string does not begin or end with '+' then return false
+    // if any alphabet char of the given string does not begin or end with '+' then return false
     else if (/[^+][a-zA-Z]/.test(str) || /[a-zA-Z][^+]/.test(str)) {
         return false;
     }
