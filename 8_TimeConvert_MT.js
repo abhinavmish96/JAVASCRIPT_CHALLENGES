@@ -3,11 +3,17 @@
 
 function TimeConvert(num) {
     
-    
+    // calculating hours by dividing total minutes by 60 and taking the floor value to take hours as rational unit
+    // using floor as if the result after dividing by 60 might some value in decimals values , which are probably minutes and we don't need it now.
     let hour = Math.floor( num / 60 );
+
+    // calculating minutes by taking the reminder by 60 i.e the left over after calculating hours
     let min = num % 60;
+
+    // combinig hours and minutes in the format asked H:M
     let time = hour +':'+ min;
     
+    // return the time calculated
     return time; 
            
 }
