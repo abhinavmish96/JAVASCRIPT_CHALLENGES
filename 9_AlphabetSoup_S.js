@@ -21,7 +21,7 @@ return str.join('');
   
   
 // call the function to perform the sorting and you can give your favourate string as argument; I am using 'myfavstringisa' as an example.
-let sort = AlphabetSou('myfavstringisa');
+let sort = AlphabetSoup('myfavstringisa');
 
 //Display the result 
 console.log(sort);
@@ -34,10 +34,18 @@ console.log(sort);
 
 function AlphabetSoup(str) {
     
-    var arrays = str.split("");
-    var reversearrays = arrays.sort();
-    var result = reversearrays.join("");
+    var arr = str.split("");
     
-    return result;
+    var sortarr = arr.sort();
+
+    return sortarr.join("");
 
 }
+
+
+// Also see __proto__ of any array in the console of a web browser to find all the function we can use with arrays
+
+// if not mentioned explicitly functions called are always inbuilt functions of javascript
+
+
+// use this link to learn more about ASCII http://www.asciitable.com/
