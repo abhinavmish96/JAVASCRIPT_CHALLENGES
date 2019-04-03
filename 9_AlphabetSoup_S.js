@@ -3,9 +3,20 @@
 
 function AlphabetSoup(str) {
     
+    // an empty string container for swaping the char
     let x = '';
+
+    // using trim function to trim any unwanted spaces from beginnig and end of the string
+    // using toLowerCase function to convert all the char to lower case to simplify things
+    // extracting the characters of the string into an array by using split function; the argument ''(single qoutes without spaces) used is for picking each character as an element of the array.
     str = str.trim().toLowerCase().split('');
+
+    /* nested loop to check each char with all the char in the string */
+
+    // loop to select on char at a time
     for(let j = 0; j < str.length ; j++){
+
+        // loop to compare the above selected char with all the avialable char in the string to perform sorting
         for(let i = j + 1; i < str.length ; i++){
             if(str[j].charCodeAt() > str[i].charCodeAt()){
                 x = str[i];
