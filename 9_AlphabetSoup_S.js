@@ -54,7 +54,7 @@ console.log(sort);
 
 function AlphabetSoup(str) {
     
-    // extracting the characters of the string into an array by using split function; the argument ''(single qoutes without spaces) used is for picking each character as an element of the array.
+    // extracting the characters of the string into an array by using split function; the argument ""(double qoutes without spaces) used is for picking each character as an element of the array.
     var arr = str.split("");
     
     // built-in sort function of arrray to sort the array.
