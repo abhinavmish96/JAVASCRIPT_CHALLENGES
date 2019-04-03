@@ -43,6 +43,9 @@ let sort = AlphabetSoup('myfavstringisa');
 //Display the result 
 console.log(sort);
 
+
+// use this link to learn more about ASCII http://www.asciitable.com/
+
 // Fun Tip: Use sort function to perform sorting and you will see some cool stuff!!
 
 /******************************************/
@@ -67,5 +70,3 @@ function AlphabetSoup(str) {
 // Also see __proto__ of any array in the console of a web browser to find all the function we can use with arrays
 
 // if not mentioned explicitly functions called are always inbuilt functions of javascript
-
-// use this link to learn more about ASCII http://www.asciitable.com/
