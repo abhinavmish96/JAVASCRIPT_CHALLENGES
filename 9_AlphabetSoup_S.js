@@ -30,8 +30,9 @@ function AlphabetSoup(str) {
             }
         }
     }
-
-return str.join('');
+    
+    // return the sorted string formed by joining the sorted char array
+    return str.join('');
 
 }
   
