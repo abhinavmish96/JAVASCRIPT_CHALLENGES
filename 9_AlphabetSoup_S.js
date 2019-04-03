@@ -13,11 +13,13 @@ function AlphabetSoup(str) {
 
     /* nested loop to check each char with all the char in the string */
 
-    // loop to select on char at a time
+    // selcte char loop to select one char at a time
     for(let j = 0; j < str.length ; j++){
 
-        // loop to compare the above selected char with all the avialable char in the string to perform sorting
+        // compare loop to compare the above selected char with all the avialable char in the string to perform sorting
         for(let i = j + 1; i < str.length ; i++){
+
+            // condotion to check if the selected char ASCII code is greater than the char from the compare loop char
             if(str[j].charCodeAt() > str[i].charCodeAt()){
                 x = str[i];
                 str[i] = str[j];
