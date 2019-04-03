@@ -34,10 +34,14 @@ console.log(sort);
 
 function AlphabetSoup(str) {
     
+    // extracting the characters of the string into an array by using split function; the argument ''(single qoutes without spaces) used is for picking each character as an element of the array.
     var arr = str.split("");
     
+    // built-in sort function of arrray to sort the array.
     var sortarr = arr.sort();
 
+    //joining all the characters back from the array and assembiling to string back.
+    //return the reverse string
     return sortarr.join("");
 
 }
@@ -46,6 +50,5 @@ function AlphabetSoup(str) {
 // Also see __proto__ of any array in the console of a web browser to find all the function we can use with arrays
 
 // if not mentioned explicitly functions called are always inbuilt functions of javascript
-
 
 // use this link to learn more about ASCII http://www.asciitable.com/
