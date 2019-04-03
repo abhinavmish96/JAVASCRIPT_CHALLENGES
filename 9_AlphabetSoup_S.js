@@ -20,7 +20,10 @@ function AlphabetSoup(str) {
         for(let i = j + 1; i < str.length ; i++){
 
             // condotion to check if the selected char ASCII code is greater than the char from the compare loop char
+            // if true then bring the smaller alphabet char before the larger char in the string
             if(str[j].charCodeAt() > str[i].charCodeAt()){
+
+                // swapping char to sort the array
                 x = str[i];
                 str[i] = str[j];
                 str [j] = x;
