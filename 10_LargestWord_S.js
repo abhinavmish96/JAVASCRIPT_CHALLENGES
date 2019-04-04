@@ -5,6 +5,7 @@ function LargestWord(){
 
     // using trim function to trim any unwanted spaces from beginnig and end of the string
     // using replace function to remove any other char than mentioned in the range /[^]/: (range : /[]/; not : ^)
+    // except from range a-z, A-Z and [\s : space ] remove 
     // g in the replace range stands for the global modifier; which means find all matches and don't stop after the first match is found
     // extracting the characters of the string into an array by using split function; the argument ''(single qoutes without spaces) used is for picking each character as an element of the array.
     let word = sen.trim().replace(/[^a-zA-Z\s]/g, '').split(" ");
