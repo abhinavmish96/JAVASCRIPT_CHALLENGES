@@ -2,7 +2,7 @@
 
 
 function LargestWord(){
-    
+
     let word = sen.trim().replace(/[^a-zA-Z\s]/g, '').split(" ");
     let largWord = '';
     for(let i = 0; i < word.length ; i++) {
@@ -12,3 +12,10 @@ function LargestWord(){
     return largWord;
 
 }
+
+
+// call the function to check for the largest word int the sentence and you can give your favourate sentence as argument; I am using 'fun$** time!' as an example for true.
+let string = LargestWord('fun$** time!');
+
+//Display the result 
+console.log(string);
