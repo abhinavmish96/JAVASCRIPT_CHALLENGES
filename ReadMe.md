@@ -27,6 +27,7 @@ Type are into are divided into few categories :
 7. Comparing two numbers and determining which one is greater
 8. Determining the difference in hours and minutes between two given times
 9. Sorting characters in a string
+10. Determining the largest word in a string
 
 
 #### Suggestion and feedback are always welcome, feel free to fork and make changes.
