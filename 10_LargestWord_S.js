@@ -3,4 +3,12 @@
 
 function LargestWord(){
     
+    let word = sen.trim().replace(/[^a-zA-Z\s]/g, '').split(" ");
+    let largWord = '';
+    for(let i = 0; i < word.length ; i++) {
+        if(word[i].length > largWord.length) largWord = word[i];
+    }
+    
+    return largWord;
+
 }
