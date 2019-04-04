@@ -3,12 +3,23 @@
 
 function LargestWord(){
 
+    // using trim function to trim any unwanted spaces from beginnig and end of the string
+    // using replace function to remove any other char than mentioned in the range /[^]/: (range : /[]/; not : ^)
+    // g in the replace range stands for the global modifier; which means find all matches and don't stop after the first match is found
+    // extracting the characters of the string into an array by using split function; the argument ''(single qoutes without spaces) used is for picking each character as an element of the array.
     let word = sen.trim().replace(/[^a-zA-Z\s]/g, '').split(" ");
-    let largWord = '';
+
+    // empty string identifier to store the largest word
+    let largeWord = '';
+
+    // loop to go over the word array
     for(let i = 0; i < word.length ; i++) {
-        if(word[i].length > largWord.length) largWord = word[i];
+
+        // if the word array element is greater in length than store in the largeWord as the largest word
+        if(word[i].length > largeWord.length) largeWord = word[i];
     }
     
+    // return the largest word
     return largWord;
 
 }
