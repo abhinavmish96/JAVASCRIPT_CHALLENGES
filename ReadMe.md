@@ -31,6 +31,7 @@ Type are into are divided into few categories :
 9. Sorting characters in a string
 10. Determining the largest word in a string
 
+If you have problems, create an issue on this repo. Thanks! :)
 
 #### Suggestion and feedback are always welcome, feel free to fork and make changes.
 
