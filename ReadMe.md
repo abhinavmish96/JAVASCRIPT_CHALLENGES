@@ -30,7 +30,10 @@ Type are into are divided into few categories :
 8. Determining the difference in hours and minutes between two given times
 9. Sorting characters in a string
 10. Determining the largest word in a string
-11. Determine when a specific sequence terminates
+
+#### Hard Challenges :
+
+1. Determine when a specific sequence terminates
 
 If you have problems, create an issue on this repo. Thanks! :)
 
