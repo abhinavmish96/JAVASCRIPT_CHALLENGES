@@ -33,7 +33,8 @@ Type are into are divided into few categories :
 
 #### Hard Challenges :
 
-1. Determine when a specific sequence terminates
+11. Determine when a specific sequence terminates
+12. Chessboard Traveling - This challenge will require knowledge of basic mathematical combinations.
 
 If you have problems, create an issue on this repo. Thanks! :)
 
