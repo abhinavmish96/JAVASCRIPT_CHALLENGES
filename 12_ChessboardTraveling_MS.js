@@ -29,3 +29,27 @@ In total, we know that you have to take (𝑐−𝑎)+(𝑑−𝑏) steps of whi
 That is out of (𝑐−𝑎)+(𝑑−𝑏) steps, we have to select 𝑐−𝑎 of them to be horizontal steps. Hence the number of possible moves are
 
 (((𝑐−𝑎)+(𝑑−𝑏))/𝑐−𝑎)=(𝑐−𝑎+𝑑−𝑏)!/(𝑐−𝑎)!(𝑑−𝑏)! */
+
+/*Number of Ways to Move:
+In order to solve this problem, you need to start with a simple 
+problem and then work your way to a harder one.  
+
+Let's start with a 2 by 2  matrix, that is, a square made up of 4 unit 
+squares.  Now to get from  the upper left square to the bottom right 
+is going to require one move  to the right and one move down.  The 
+question is, "How many ways can I  do that?"  
+
+Let us represent a move to the right by x and a move down by  y.  
+Then there are two ways to complete the process: either xy or yx. 
+
+What about a 3 by 3 arrangment?  You will need two horizontal 
+moves and  two vertical moves, that is, you need 2 x's and 2 y's.  
+Let's list the  number of ways you could complete the problem:
+
+xxyy  xyxy  xyyx  yxyx  yxxy  yyxx   - a total of six ways.
+
+Now this problem is very similar to the one where you arrange 
+letters in  a word and have repeating letters.  For the 3 by 3 
+arrangment you have a  total of 4 letters (2 x's and 2 y's) but each of 
+these is repeated, so that the number of ways they can be arranged is 
+4!/(2!2!) = 6  where the "!" stands for factorial. */
