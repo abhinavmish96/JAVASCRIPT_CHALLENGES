@@ -21,3 +21,11 @@ let string = ChessboardTraveling("(1 1)(3 3)");
 
 //Display the result 
 console.log(string);
+
+/* Detailed Explaination of the Math involved: If you move the (𝑎,𝑏) to (𝑐,𝑑) where 𝑐≥𝑎 and 𝑑≥𝑏.
+
+In total, we know that you have to take (𝑐−𝑎)+(𝑑−𝑏) steps of which (𝑐−𝑎) of them are horizontal steps and clearly the rest are vertical moves.
+
+That is out of (𝑐−𝑎)+(𝑑−𝑏) steps, we have to select 𝑐−𝑎 of them to be horizontal steps. Hence the number of possible moves are
+
+(((𝑐−𝑎)+(𝑑−𝑏))/𝑐−𝑎)=(𝑐−𝑎+𝑑−𝑏)!/(𝑐−𝑎)!(𝑑−𝑏)! */
