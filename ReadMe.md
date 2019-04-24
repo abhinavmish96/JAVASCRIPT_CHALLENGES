@@ -35,6 +35,7 @@ Type are into are divided into few categories :
 
 11. Determine when a specific sequence terminates
 12. Chessboard Traveling - This challenge will require knowledge of basic mathematical combinations.
+13. Searching a matrix for the largest square submatrix
 
 If you have problems, create an issue on this repo. Thanks! :)
 
