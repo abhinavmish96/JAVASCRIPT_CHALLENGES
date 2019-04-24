@@ -7,5 +7,11 @@
 For the input above, you can see the bolded 1's create the largest square submatrix of size 2x2, so your program should return the area which is 4. You can assume the input will not be empty. */
 
 function MaximalSquare(strArr){
-    
+
 }
+
+// call the function for computing Maximal square and you can give your favourate array of string as argument; I am using "["0111", "1111", "1111", "1111"]" as an example for true.
+let result = MaximalSquare(["0111", "1111", "1111", "1111"]);
+
+//Display the result 
+console.log(result);
