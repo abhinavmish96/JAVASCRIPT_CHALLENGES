@@ -28,16 +28,20 @@ function MaximalSquare(strArr){
 }
 
 function initialEval (arr) {
-    
+    // empty array
     let initArray = [];
+    // using forEach protoype on the argument arr to get the element and the row number
     arr.forEach((row, rowNum) => {
+        // using forEach protoype on the sub array row to get the element and the column number
         row.forEach((val, colNum) => {
+            // if the element is 1 only then push the row and column number to the initArray as a sub array
             if (val === '1') {
                 initArray.push([rowNum, colNum]);
             }
         });
     });
     
+    // return initArray with the all positions of '1'
     return initArray;
 }
 
