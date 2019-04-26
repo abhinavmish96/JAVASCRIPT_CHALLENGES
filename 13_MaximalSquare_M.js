@@ -11,7 +11,10 @@ function MaximalSquare(strArr){
     // using map from array prototype for converting each element of the given array into sub array and storing those subarrays into parent array named fullArray
     let fullArray = strArr.map(val => val.split(''));
 
+    // calling function to get the position of all the '1' in form of row and column number as a sub arrays and stored in initArray
     let initArray = initialEval(fullArray);
+
+    // if the initArray is empty then return the area 0
     if (initArray.length === 0) {
         return 0;
     }
@@ -27,6 +30,7 @@ function MaximalSquare(strArr){
     return Math.pow(count - 1, 2);
 }
 
+// function to get the position of all the '1' in form of row and column number and return an array with sub arrays with positions
 function initialEval (arr) {
     // empty array
     let initArray = [];
