@@ -18,7 +18,11 @@ function MaximalSquare(strArr){
     if (initArray.length === 0) {
         return 0;
     }
-    count = 1;
+
+    // a count variable
+    let count = 1;
+
+    // a loop until initArray is fully iterated element by element
     while (initArray.length) {
         initArray = initArray.filter(val => {
             return testOne(fullArray, count + 1, val[0], val[1]);
