@@ -24,6 +24,7 @@ function MaximalSquare(strArr){
 
     // a loop until initArray is fully iterated element by element
     while (initArray.length) {
+        // using filter protoype on the initArray to get the side of the square
         initArray = initArray.filter(val => {
             return testOne(fullArray, count + 1, val[0], val[1]);
         })
@@ -53,6 +54,7 @@ function initialEval (arr) {
     return initArray;
 }
 
+//
 function testOne(arr, size, r, c) {
     for (let i = 0; i < size; i++) {
         for (let j = 0; j < size; j++) {
