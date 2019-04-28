@@ -22,16 +22,18 @@ function MaximalSquare(strArr){
     // a count variable
     let count = 1;
 
-    // a loop until initArray is fully iterated element by element
+    // a loop until initArray is fully iterated element by element(subarrays)
     while (initArray.length) {
         // using filter protoype on the initArray to get the side of the square
         initArray = initArray.filter(val => {
             return testOne(fullArray, count + 1, val[0], val[1]);
         })
+        // increase count to get the side of the square
         count++;
         if (count > 10) break;
     }
     
+    // side*side for the area of the square
     return Math.pow(count - 1, 2);
 }
 
@@ -54,16 +56,19 @@ function initialEval (arr) {
     return initArray;
 }
 
-//
+// array filtering the function
 function testOne(arr, size, r, c) {
+    // to check for height
     for (let i = 0; i < size; i++) {
+        // to count for width 
         for (let j = 0; j < size; j++) {
+            // if the condition is fullfiled then the element is not the part of the square and returns false to be excluded
             if (!arr[r + i] || !arr[r + i][c + j] || arr[r + i][c + j] !== '1') {
                 return false;
             }
         }
     }
-    
+    // returns true if the conditions for the recieved value is fullfiled and return to be excluded
     return true;
 }
 
