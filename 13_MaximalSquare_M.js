@@ -63,6 +63,7 @@ function testOne(arr, size, r, c) {
         // to count for width 
         for (let j = 0; j < size; j++) {
             // if the condition is fullfiled then the element is not the part of the square and returns false to be excluded
+            // it check for '1' which do not have immediate '1' to right and to down and returns false if that is fulfilled
             if (!arr[r + i] || !arr[r + i][c + j] || arr[r + i][c + j] !== '1') {
                 return false;
             }
