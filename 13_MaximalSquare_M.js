@@ -70,6 +70,7 @@ function testOne(arr, size, r, c) {
         }
     }
     // returns true if the conditions for the recieved value is fullfiled and return to be excluded
+    // if above check for '1' which do not have immediate '1' to right and to down is not fulfilled then it returns true
     return true;
 }
 
