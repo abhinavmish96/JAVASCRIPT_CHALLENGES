@@ -25,6 +25,7 @@ function MaximalSquare(strArr){
     // a loop until initArray is fully iterated element by element(subarrays)
     while (initArray.length) {
         // using filter protoype on the initArray to get the side of the square
+        // it filters for '1' which do not have immediate '1' to right and to down and returns false if that is fulfilled otherwise true
         initArray = initArray.filter(val => {
             return testOne(fullArray, count + 1, val[0], val[1]);
         })
