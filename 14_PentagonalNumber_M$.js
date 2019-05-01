@@ -3,3 +3,13 @@
 14_PentagonalNumber_M$.png
 
 Your program should return the number of dots that exist in the whole pentagon on the Nth iteration. */
+
+function PentagonalNumber(num){
+
+}
+
+// call the function for computing Pentagonal NUmber and you can give your favourate number as argument; I am using "2" as an example for true.
+let result = PentagonalNumber(2);
+
+//Display the result 
+console.log(result);
