@@ -5,6 +5,8 @@
 Your program should return the number of dots that exist in the whole pentagon on the Nth iteration. */
 
 function PentagonalNumber(num){
+    
+    return num === 1 ? 1 : PentagonalNumber(num - 1) + (5 * (num - 1));
 
 }
 
