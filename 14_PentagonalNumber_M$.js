@@ -7,6 +7,7 @@ Your program should return the number of dots that exist in the whole pentagon o
 function PentagonalNumber(num){
     
     // using recursion function
+    // if the Nth iteration is '1' then return 1 otherwise call the recursive function for the Nth -1 iteration with formula (5 * (num - 1))
     return num === 1 ? 1 : PentagonalNumber(num - 1) + (5 * (num - 1));
 
 }
