@@ -37,6 +37,8 @@ Type are into are divided into few categories :
 12. Chessboard Traveling - This challenge will require knowledge of basic mathematical combinations.
 13. Searching a matrix for the largest square submatrix
 14. Finding how many dots can fit into a pentagonal shape
+15. Traversing a matrix searching for the correct path to take.
+
 
 If you have problems, create an issue on this repo. Thanks! :)
 
