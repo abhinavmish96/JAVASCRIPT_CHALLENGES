@@ -30,6 +30,7 @@ Type are into are divided into few categories :
 8. Determining the difference in hours and minutes between two given times
 9. Sorting characters in a string
 10. Determining the largest word in a string
+15. Traversing a matrix searching for the correct path to take.
 
 #### Hard Challenges :
 
@@ -37,7 +38,6 @@ Type are into are divided into few categories :
 12. Chessboard Traveling - This challenge will require knowledge of basic mathematical combinations.
 13. Searching a matrix for the largest square submatrix
 14. Finding how many dots can fit into a pentagonal shape
-15. Traversing a matrix searching for the correct path to take.
 
 
 If you have problems, create an issue on this repo. Thanks! :)
