@@ -4,6 +4,7 @@ For example: if str is "r?d?drdd" then your program should output the final corr
 
 function CorrectPath(str){
 
+    // return the result
     return str;
 }
 
