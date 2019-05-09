@@ -8,7 +8,7 @@ function CorrectPath(str){
     return str;
 }
 
-// call the function to check for the Correct Path in the sentence and you can give your favourate sentence as argument; I am using '???rrurdr?' as an example for true.
+// call the function to check for the Correct Path in the sentence and you can give your favourate sentence as argument; I am using '???rrurdr?' as an example.
 let string = CorrectPath("???rrurdr?");
 
 //Display the result 
