@@ -3,7 +3,9 @@
 For example: if str is "r?d?drdd" then your program should output the final correct string that will allow a path to be formed from the top left of a 5x5 grid to the bottom right. For this input, your program should therefore return the string rrdrdrdd. There will only ever be one correct path and there will always be at least one question mark within the input string.  */
 
 function CorrectPath(str){
-    let arr;
+
+    // 5X5 matrix grid
+    let arr = [[0,1,2,3,4],[0,1,2,3,4],[0,1,2,3,4],[0,1,2,3,4],[0,1,2,3,4]];
     // return the result
     return str;
 }
