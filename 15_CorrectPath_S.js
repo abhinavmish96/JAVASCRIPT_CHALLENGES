@@ -4,12 +4,6 @@ For example: if str is "r?d?drdd" then your program should output the final corr
 
 function CorrectPath(str){
 
-    // 5X5 matrix grid
-    let arr = [[0,1,2,3,4],[0,1,2,3,4],[0,1,2,3,4],[0,1,2,3,4],[0,1,2,3,4]];
-    let step = str.split('');
-    let currPos = arr[0][0];
-    let startPos = arr[0][0];
-    let finPos = arr[4][4];
     //create an array to hold the positions of the question marks
     let blankArray = [];
     //put the position of the question marks into the array
@@ -19,29 +13,69 @@ function CorrectPath(str){
     let num = blankArray.length;
     //we are going to try each possibility until we find one that works,  This will be 4^num permutations
     let total = Math.pow(4, num);
-    // return the result
-    return str;
+    for (let i = 0; i < total; i++) {
+        //go through each permutation, first creating a representative number, then making the path, then testing it
+        let numString = (i + total).toString(4).slice(1);
+        let currentPath = createPath(str, blankArray, numString);
+        if (isPathGood(currentPath)) return currentPath;
+    }
 }
 
-function right (array,i,j){
-    if (j >= 4) return array[i][j];
-    else return array[i][j+1];
-}
+isPathGood = (str) => {
+  //create our empty array
+  let testArray = []
+  for (let i = 0; i < 5; i++) {
+    testArray.push([0, 0, 0, 0, 0])
+  }
 
-function left (array,i,j){
-    if (j <= 0) return array[i][j];
-    else return array[i][j-1];
-}
+  let len = str.length;
+  let currentLoc = [0, 0];
 
-function up (array,i,j){
-    if (i <= 0) return array[i][j];
-    else return array[i+1][j];
-}
+  for (let i = 0; i < len; i++) {
+      //mark our current square as visited
+    testArray[currentLoc[0]][currentLoc[1]] = 1;
+    //alter the position based on the next letter
+    let newLoc = currentLoc.slice(0);
+    switch (str[i]) {
+      case 'u':
+        newLoc[0]--;
+        break;
+      case 'd':
+        newLoc[0]++;
+        break;
+      case 'r':
+        newLoc[1]++;
+        break;
+      case 'l':
+        newLoc[1]--;
+        break;
+    }
+    //quit if we have gone off the board
+    if (newLoc.includes (-1) || newLoc.includes (5)) {
+        return false;
+    }
+    //quit if we are on a previously visited space
+    if (testArray[newLoc[0]][newLoc[1]] === 1) {
+      return false;
+    }
+    //return true if we are at the target square on our last go
+    if (newLoc[0] === 4 && newLoc[1] === 4 && i === len - 1) {
+      return true;
+    }
+    //update our location for the next loop;
+    currentLoc = newLoc;
+  }
+  return false;
+};
 
-function down (array,i,j){
-    if (i >= 4) return array[i][j];
-    else return array[i+1][j];
-}
+createPath = (str, blanks, num) => {
+  let moveArray = ['r', 'l', 'u', 'd'];
+  strArr = str.split('');
+  blanks.forEach((val, ind) => {
+    strArr.splice(val, 1, moveArray[num[ind]]);
+  });
+  return strArr.join('');
+};
 
 // call the function to check for the Correct Path in the sentence and you can give your favourate sentence as argument; I am using '???rrurdr?' as an example.
 let string = CorrectPath("???rrurdr?");
