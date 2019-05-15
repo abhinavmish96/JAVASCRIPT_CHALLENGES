@@ -31,6 +31,7 @@ Type are into are divided into few categories :
 9. Sorting characters in a string
 10. Determining the largest word in a string
 15. Traversing a matrix searching for the correct path to take.
+16. Balancing a scale with weights on it
 
 #### Hard Challenges :
 
