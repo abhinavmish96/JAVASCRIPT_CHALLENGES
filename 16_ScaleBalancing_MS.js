@@ -4,14 +4,14 @@ There will only ever be one unique solution and the list of available weights wi
 
 function ScaleBalancing(strArr){
     let scale = [];
-    strArr[0].split('').forEach((val) => {
+    strArr[0].replace(/[\[\]]/g, "").split(',').forEach((val) => {
         if(!isNaN(parseInt(val))) scale.push(parseInt(val));
-    });;
+    });
     scale.sort();
 
     let weights =[];
-    strArr[1].split('').forEach((val) => {
-        if(!isNaN(parseInt(val))) a.push(parseInt(val));
+    strArr[1].replace(/[\[\]]/g, "").split(',').forEach((val) => {
+        if(!isNaN(parseInt(val))) weights.push(parseInt(val));
     });;
 
     let diff = scale[1] - scale[0];
@@ -23,8 +23,9 @@ function ScaleBalancing(strArr){
 
     //two-weights, one-side test
     let weight1 = weights.find((val, ind) => {
-        let newWeights = weights.slice(0);newWeights.splice(ind, 1);
-        return newWeights.includes (diff - val)
+        let newWeights = weights.slice(0);
+        newWeights.splice(ind, 1);
+        return newWeights.includes (diff - val);
     });
     if (weight1) {
         return `${weight1},${diff - weight1}`
@@ -35,7 +36,7 @@ function ScaleBalancing(strArr){
         return weights.includes(diff + val);
     });
     if (weight1) {
-        return `${weight1},${diff + weight1}`
+        return `${weight1},${diff + weight1}`;
     }
     
     //if nothing is returned the return not possible
