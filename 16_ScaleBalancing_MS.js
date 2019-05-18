@@ -3,18 +3,17 @@
 There will only ever be one unique solution and the list of available weights will not be empty. It is also possible to add two weights to only one side of the scale to balance it. If it is not possible to balance the scale then your program should return the string not possible. */
 
 function ScaleBalancing(strArr){
-    let scale = [];
-    strArr[0].replace(/[\[\]]/g, "").split(',').forEach((val) => {
-        if(!isNaN(parseInt(val))) scale.push(parseInt(val));
-    });
-    scale.sort();
-
-    let weights =[];
-    strArr[1].replace(/[\[\]]/g, "").split(',').forEach((val) => {
-        if(!isNaN(parseInt(val))) weights.push(parseInt(val));
-    });;
-
-    let diff = scale[1] - scale[0];
+    
+    let newArr = strArr.map(val => {
+        return val.replace(/[\[\]]/g, "").split(',').map(val2 => {
+          return parseInt(val2, 10);
+        }).sort((a, b) => {
+          return a - b;
+        });
+      });
+      
+      let diff = newArr[0][1] - newArr[0][0];
+      let weights = newArr[1];
 
     //single-weight solution test
     if(weights.includes(diff)){
