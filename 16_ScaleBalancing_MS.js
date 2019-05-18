@@ -4,15 +4,19 @@ There will only ever be one unique solution and the list of available weights wi
 
 function ScaleBalancing(strArr){
     
+    // converting the array of string sub-arrays to normal numeric arrays
     let newArr = strArr.map(val => {
         return val.replace(/[\[\]]/g, "").split(',').map(val2 => {
           return parseInt(val2, 10);
         }).sort((a, b) => {
+            // compare function used here
           return a - b;
         });
       });
       
+      // difference in the scale
       let diff = newArr[0][1] - newArr[0][0];
+      // additional weights provided
       let weights = newArr[1];
 
     //single-weight solution test
